@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:text="点击对应按钮启动对应传感器"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:paddingBottom="30dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LIGHT SENSOR"
+        android:id="@+id/light"
+        app:layout_constraintTop_toBottomOf="@id/textview"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GYRO SENSOR"
+        android:id="@+id/gyro"
+        app:layout_constraintTop_toBottomOf="@id/light"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MANGNETIC SENSOR"
+        android:id="@+id/mangnetic"
+        app:layout_constraintTop_toBottomOf="@id/gyro"/>
+
+</android.support.constraint.ConstraintLayout>
